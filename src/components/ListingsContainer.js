@@ -3,8 +3,6 @@ import ListingCard from "./ListingCard";
 
 function ListingsContainer({ listOfItems, setListOfItems }) {
 
-
-
   useEffect(() => {
     fetch("http://localhost:6001/listings")
     .then(res => res.json())

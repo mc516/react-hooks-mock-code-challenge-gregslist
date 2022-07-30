@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 
-function Search() {
+function Search({ listOfItems,setListing, onSearch }) {
+
   const [search, setSearch] = useState("")
 
   function handleSubmit(e) {
     e.preventDefault();
+    onSearch(search)
     console.log("submitted");
   }
 

@@ -8,7 +8,7 @@ function App() {
 
   return (
     <div className="app">
-      <Header />
+      <Header listOfItems={listing} setListing={setListing}/>
       <ListingsContainer listOfItems={listing} setListOfItems={setListing}/>
     </div>
   );
