@@ -14,8 +14,9 @@ function ListingCard( {listedItem, onDeleteItem} ) {
     fetch(`http://localhost:6001/listings/${id}`, {
       method: "DELETE",
     })
-    .then(res => res.json())
-    .then(item => onDeleteItem(item))
+    // .then(res => res.json())
+    // .then(item => onDeleteItem(item))
+    onDeleteItem(id)
   }
 
   return (

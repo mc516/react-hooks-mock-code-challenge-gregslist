@@ -1,18 +1,17 @@
-import React, { useState } from "react";
+import React from "react";
 
-function Search({ listOfItems,setListing, onSearch }) {
-
-  const [search, setSearch] = useState("")
+function Search({ onSearch, search, setSearch }) {
 
   function handleSubmit(e) {
     e.preventDefault();
-    onSearch(search)
     console.log("submitted");
+    onSearch(search)
   }
 
   function handleSearchChange(e) {
     console.log(e.target.value)
     setSearch(e.target.value)
+   
   }
 
   return (
